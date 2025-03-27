@@ -10,11 +10,11 @@
   
   <head>
     <meta charset="utf-8">
-      <title>Class AppCommandFactory | Documentation </title>
+      <title>Class AppBoolean | Documentation </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class AppCommandFactory | Documentation ">
+      <meta name="title" content="Class AppBoolean | Documentation ">
       
-      <meta name="description" content="Factory class for creating command instances based on command types.">
+      <meta name="description" content="Extends the BOOSE Boolean class to override restrictions.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -69,10 +69,10 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="ASE_Assignment_Ashley_Hughes.AppCommandFactory">
+        <article data-uid="ASE_Assignment_Ashley_Hughes.AppBoolean">
 
-  <h1 id="ASE_Assignment_Ashley_Hughes_AppCommandFactory" data-uid="ASE_Assignment_Ashley_Hughes.AppCommandFactory" class="text-break">
-    Class AppCommandFactory  <a class="header-action link-secondary" title="View source" href="#"><i class="bi bi-code-slash"></i></a>
+  <h1 id="ASE_Assignment_Ashley_Hughes_AppBoolean" data-uid="ASE_Assignment_Ashley_Hughes.AppBoolean" class="text-break">
+    Class AppBoolean  <a class="header-action link-secondary" title="View source" href="#"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -80,37 +80,62 @@
     <dl><dt>Assembly</dt><dd>ASE Assignment Ashley Hughes.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Factory class for creating command instances based on command types.
-Extends original BOOSE command factory.</p>
+  <div class="markdown summary"><p>Extends the BOOSE Boolean class to override restrictions.</p>
   </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class AppCommandFactory : CommandFactory</code></pre>
+    <pre><code class="lang-csharp hljs">public class AppBoolean : BOOSE.Boolean</code></pre>
   </div>
 
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">CommandFactory</span></div>
-      <div><span class="xref">AppCommandFactory</span></div>
+      <div><span class="xref">BOOSE.Boolean</span></div>
+      <div><span class="xref">AppBoolean</span></div>
     </dd>
   </dl>
 
-  <h2 class="section" id="constructors">Constructors</h2>
+  <h2 class="section" id="methods">Methods</h2>
 
-  <a id="ASE_Assignment_Ashley_Hughes_AppCommandFactory__ctor_" data-uid="ASE_Assignment_Ashley_Hughes.AppCommandFactory.#ctor*"></a>
+  <a id="ASE_Assignment_Ashley_Hughes_AppBoolean_Restrictions_" data-uid="ASE_Assignment_Ashley_Hughes.AppBoolean.Restrictions*"></a>
 
-  <h3 id="ASE_Assignment_Ashley_Hughes_AppCommandFactory__ctor" data-uid="ASE_Assignment_Ashley_Hughes.AppCommandFactory.#ctor">
-    AppCommandFactory()
+  <h3 id="ASE_Assignment_Ashley_Hughes_AppBoolean_Restrictions" data-uid="ASE_Assignment_Ashley_Hughes.AppBoolean.Restrictions">
+    Restrictions()
     <a class="header-action link-secondary" title="View source" href="#"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="ASE_Assignment_Ashley_Hughes.AppCommandFactory.html">AppCommandFactory</a> class.
-Applies Boolean patch to bypass restrictions.</p>
+  <div class="markdown level1 summary"><p>Overrides the base Restrictions method to bypass limitations
+on the number of Boolean instances that can be created.</p>
   </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="
+    <pre><code class="lang-csharp hljs">public override void Restrictions()</code></pre>
+  </div>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="#" class="edit-link">Edit this page</a>
+        </div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Documentation generated on March 27, 2025</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
