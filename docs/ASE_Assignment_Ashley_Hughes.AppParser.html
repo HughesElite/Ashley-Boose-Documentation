@@ -4,7 +4,23 @@
    <title>style attributes</title>
 	<style>
 	  body {
-		background-color: #fff;
+		background-color: #e3e3e3;
+	  }
+	  .markdown p {
+		text-align: left;
+		margin-bottom: 10px;
+	  }
+	  .facts dt, .facts dd {
+		text-align: left;
+	  }
+	  .parameters dt, .parameters dd {
+		text-align: left;
+	  }
+	  .codewrapper {
+		text-align: left;
+	  }
+	  h1, h2, h3, h4 {
+		text-align: left;
 	  }
 	</style>
   
@@ -14,7 +30,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class AppParser | Documentation ">
       
-      <meta name="description" content="Extends the BOOSE Parser to remove line and command restrictions.">
+      <meta name="description" content="Provides program parsing with unrestricted line and command processing.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -72,9 +88,89 @@
         <article data-uid="ASE_Assignment_Ashley_Hughes.AppParser">
 
   <h1 id="ASE_Assignment_Ashley_Hughes_AppParser" data-uid="ASE_Assignment_Ashley_Hughes.AppParser" class="text-break">
-    Class AppParser  <a class="header-action link-secondary" title="View source" href="#"><i class="bi bi-code-slash"></i></a>
+    Class AppParser <a class="header-action link-secondary" title="View source" href="#"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
     <dl><dt>Namespace</dt><dd><a class="xref" href="ASE_Assignment_Ashley_Hughes.html">ASE_Assignment_Ashley_Hughes</a></dd></dl>
     <dl><dt>Assembly</dt><dd>ASE Assignment Ashley Hughes.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Provides program parsing with unrestricted line and command processing.</p>
+  </div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AppParser : Parser</code></pre>
+  </div>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Parser</span></div>
+      <div><span class="xref">AppParser</span></div>
+    </dd>
+  </dl>
+
+  <h2 class="section" id="constructors">Constructors</h2>
+
+  <a id="ASE_Assignment_Ashley_Hughes_AppParser__ctor_" data-uid="ASE_Assignment_Ashley_Hughes.AppParser.#ctor*"></a>
+
+  <h3 id="ASE_Assignment_Ashley_Hughes_AppParser__ctor" data-uid="ASE_Assignment_Ashley_Hughes.AppParser.#ctor">
+    AppParser(CommandFactory, StoredProgram)
+    <a class="header-action link-secondary" title="View source" href="#"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="ASE_Assignment_Ashley_Hughes.AppParser.html">AppParser</a> class.</p>
+  </div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AppParser(CommandFactory Factory, StoredProgram Program) : base(Factory, Program)</code></pre>
+  </div>
+  
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Factory</code> <span class="xref">CommandFactory</span></dt>
+    <dd>The command factory to use for creating commands.</dd>
+    <dt><code>Program</code> <span class="xref">StoredProgram</span></dt>
+    <dd>The stored program to populate with commands.</dd>
+  </dl>
+
+  <h2 class="section" id="methods">Methods</h2>
+
+  <a id="ASE_Assignment_Ashley_Hughes_AppParser_ParseProgram_" data-uid="ASE_Assignment_Ashley_Hughes.AppParser.ParseProgram*"></a>
+
+  <h3 id="ASE_Assignment_Ashley_Hughes_AppParser_ParseProgram" data-uid="ASE_Assignment_Ashley_Hughes.AppParser.ParseProgram">
+    ParseProgram(string)
+    <a class="header-action link-secondary" title="View source" href="#"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Overrides ParseProgram to bypass the line count restriction in the base BOOSE parser.</p>
+  </div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ParseProgram(string program)</code></pre>
+  </div>
+  
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>program</code> <span class="xref">string</span></dt>
+    <dd>The program text to parse.</dd>
+  </dl>
+
+        </article>
+      </div>
+    </main>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Documentation generated on March 27, 2025</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
